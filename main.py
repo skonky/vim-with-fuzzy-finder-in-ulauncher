@@ -220,7 +220,7 @@ class ItemEnterEventListener(EventListener):
         data = event.get_data()
         logger.info(data)
         if data:
-            subprocess.Popen('nvim "%s"' % data, shell=True)
+            subprocess.Popen('kitty -e nvim "%s"' % data, shell=True)
 
 
 if __name__ == "__main__":
